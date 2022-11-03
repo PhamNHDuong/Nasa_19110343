@@ -1,0 +1,24 @@
+{
+  "name": "nasa_19110343",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm --prefix ./server install package.json",
+    "install-client": "npm --prefix ./client install package.json",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server",
+    "client": "npm run start --prefix client",
+    "watch": "npm-run-all --parallel server client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ecstatic": "^4.1.4",
+    "morgan": "^1.10.0",
+    "serve": "^14.0.1"
+  }
+}
