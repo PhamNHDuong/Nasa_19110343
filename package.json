@@ -20,5 +20,9 @@
     "ecstatic": "^4.1.4",
     "morgan": "^1.10.0",
     "serve": "^14.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "supertest": "^6.3.1"
   }
 }
